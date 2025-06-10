@@ -38,6 +38,19 @@ def respond_to_command(command):
          song_name = command.replace("play", "").strip()  # Extract song name from command
          speak(f"Playing {song_name} on YouTube")
          pywhatkit.playonyt(song_name)
+
+    elif command == "what is your name" or command == "who are you":
+     speak("My name is FRIDAY, your personal assistant.")
+    elif "who is your owner" in command:
+        speak("My owner is Mr Netik Goswami.")
+    elif "what can you do" in command:
+        speak("I can help you with various tasks like opening websites, telling the time, playing music, and more. Just ask me what you need!")
+    elif "what is your purpose" in command:
+        speak("My purpose is to assist you with tasks, provide information, and make your life easier. I am here to help you with anything you need.")
+    elif "how r u" in command or "how are you" in command:
+        speak("I am doing well, thank you for asking! How can I assist you today?")
+    elif "who created you" in command:
+        speak("I was created by Mr Netik Goswami, a talented developer.")
         
     elif "introduce" in command :
         speak("I am FRIDAY, a personal assistant created by MR NETIK GOSWAMI . I can help you with various tasks like opening websites, telling the time, and more.")
