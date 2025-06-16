@@ -6,7 +6,7 @@ def open_browser(command):
         print("Opening YouTube video...")
         engine.say("OPENING YOUTUBE VIDEO")
         engine.runAndWait()
-        url = "https://youtu.be/bKDdT_nyP54?si=_Wi-d-eyBEB7v0ij"
+        url = "https://youtube.com/"
         net.open(url)
     elif command == "open whatsapp":
         print("Opening WhatsApp...")
